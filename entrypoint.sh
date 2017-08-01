@@ -21,7 +21,6 @@ fi
 # Fix for Rust not starting
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)
 #fix DNS
-echo nameserver 91.214.70.1 > /etc/resolv.conf
 
 # Run the Server
 node /wrapper.js "${MODIFIED_STARTUP}"
